@@ -4,7 +4,8 @@
   "description": "Single page application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development --hot"
   },
   "keywords": [
     "javascript"
