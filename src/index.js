@@ -1,1 +1,4 @@
-console.log(`It's works`)
+import router from './routes'
+
+window.addEventListener('load', router)
+window.addEventListener('hashchange', router)

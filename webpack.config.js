@@ -1,5 +1,6 @@
 const path = require('path')
 const HWP = require('html-webpack-plugin')
+const CopyWebpackPLugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -8,7 +9,7 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['js']
+    extensions: ['.js']
   },
   module: {
     rules: [
@@ -26,6 +27,12 @@ module.exports = {
       inject: true,
       template: './public/index.html',
       filename: './index.html'
-    })
+    }),
+    new CopyWebpackPLugin([
+      {
+        from: './src/styles/styles.css',
+        to: ''
+      }
+    ])
   ]
 }

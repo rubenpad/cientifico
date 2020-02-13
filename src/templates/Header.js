@@ -1,14 +1,14 @@
 function Header() {
   const view = `
-    <div className="header__main">
-      <div className="header__logo">
+    <div class="header-main">
+      <div class="header-logo">
         <h1>
           <a href="/">
             100tifi.co
           </a>
         </h1>
       </div>
-      <nav className="header__nav">
+      <nav class="header-nav">
         <a href="#/about">
           About
         </a>
